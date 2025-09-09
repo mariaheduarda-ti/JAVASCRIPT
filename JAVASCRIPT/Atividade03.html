@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 3 - Verificação de Maioridade</title>
+</head>
+<body>
+  <h1>Atividade 3 - Verificação de Maioridade</h1>
+
+  <button onclick="verificarIdade()">Digite sua idade</button>
+  <p id="resultadoIdade"></p>
+
+  <script>
+    function verificarIdade() {
+      let idade = parseInt(prompt("Digite sua idade:"));
+
+      if (idade >= 18) {
+        document.getElementById("resultadoIdade").innerText =
+          `Maior de idade`;
+      } else {
+        document.getElementById("resultadoIdade").innerText =
+          `Menor de idade`;
+      }
+    }
+  </script>
+</body>
+</html>

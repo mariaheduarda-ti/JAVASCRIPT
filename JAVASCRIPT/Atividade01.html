@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 1 - Saudação</title>
+</head>
+<body>
+  <h1>Atividade 1 - Saudação</h1>
+
+  <button onclick="saudacao()">Digite seu nome</button>
+  <p id="mensagemSaudacao"></p>
+
+  <script>
+    function saudacao() {
+      let nome = prompt("Qual o seu nome?");
+      if (nome) {
+        document.getElementById("mensagemSaudacao").innerText =
+          `Olá, ${nome}! Seja bem-vindo(a) ao nosso site.`;
+      }
+    }
+  </script>
+</body>
+</html>
